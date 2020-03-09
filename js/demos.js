@@ -7,17 +7,17 @@ define([], function () {
     currentBranch: '20.3',
     commitData: [
         {"id": 'e137e9b', "parent": "initial", tags: ['20.3'], message: 'first',
-            "cx": 50, "cy": 330},
+            "cx": 50, "cy": 330, "branchless": false},
         {"id": '1c016b6', "parent": "e137e9b", tags: ['develop'], message: 'Job Automation',
-            "cx": 320, "cy": 330},
+            "cx": 320, "cy": 330, "branchless": false},
         {"id": '84c98fe', "parent": "e137e9b", tags: [], message: 'Fixes',
-            "cx": 140, "cy": 240},
+            "cx": 140, "cy": 240, "branchless": false},
         {"id": 'dd70cfe', "parent": "84c98fe", tags: [], message: 'Fixes',
-            "cx": 230, "cy": 240},
+            "cx": 230, "cy": 240, "branchless": false},
         {"id": '422376e', "parent": "dd70cfe", "parent2": "1c016b6", tags: [], message: "Merge",
-            "cx": 410, "cy": 240},
+            "cx": 320, "cy": 240, "branchless": false},
         {"id": '63ca08a', "parent": "422376e", tags: ["20.3", "HEAD"], message: 'Last Fix',
-            "cx": 500, "cy": 240}
+            "cx": 410, "cy": 240, "branchless": false}
     ]
   }
 
