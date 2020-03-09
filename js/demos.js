@@ -4,21 +4,19 @@ define([], function () {
     title: 'Merged from wrong upstream',
     key: 'wrong-merge',
     message: 'Oh no! You merged changes from develop into a release feature branch branch!',
-    currentBranch: '20.3_feature',
+    currentBranch: '20.3',
     commitData: [
-        {"id": 'e137e9b', "parent": "initial", tags: ['release20.3-SNAPSHOT'], message: 'first commit',
+        {"id": 'e137e9b', "parent": "initial", tags: ['20.3'], message: 'first',
             "cx": 50, "cy": 330},
-        {"id": '1c016b6', "parent": "e137e9b", tags: ['develop'], message: 'Job Sample Automation',
+        {"id": '1c016b6', "parent": "e137e9b", tags: ['develop'], message: 'Job Automation',
             "cx": 320, "cy": 330},
-        {"id": '84c98fe', "parent": "e137e9b", tags: [], message: 'List Test Fixes 1',
+        {"id": '84c98fe', "parent": "e137e9b", tags: [], message: 'Fixes',
             "cx": 140, "cy": 240},
-        {"id": 'dd70cfe', "parent": "84c98fe", tags: [], message: 'List Test Fixes 2',
+        {"id": 'dd70cfe', "parent": "84c98fe", tags: [], message: 'Fixes',
             "cx": 230, "cy": 240},
-        {"id": 'cb08bae', "parent": "dd70cfe", tags: [], message: 'List Test Fixes 3',
-            "cx": 320, "cy": 240},
-        {"id": '422376e', "parent": "cb08bae", "parent2": "1c016b6", tags: [], message: "Merge develop into 20.3_feature",
+        {"id": '422376e', "parent": "dd70cfe", "parent2": "1c016b6", tags: [], message: "Merge",
             "cx": 410, "cy": 240},
-        {"id": '63ca08a', "parent": "422376e", tags: ["20.3_feature", "HEAD"], message: 'List test code review feedback',
+        {"id": '63ca08a', "parent": "422376e", tags: ["20.3", "HEAD"], message: 'Last Fix',
             "cx": 500, "cy": 240}
     ]
   }
