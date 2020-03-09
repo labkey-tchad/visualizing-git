@@ -1,5 +1,27 @@
 define([], function () {
 
+  var mergeFromWrongUpstream = {
+    title: 'LabKey - Merged from wrong upstream',
+    key: 'wrong-merge',
+    message: 'Oh no! You merged changes from develop into a release feature branch branch!',
+    commitData: [
+        {id: 'e137e9b', "parent": "initial", tags: ['release20.3-SNAPSHOT'], message: 'first commit',
+            "cx": 50, "cy": 330},
+        {id: '1c016b6', "parent": "e137e9b", tags: ['develop'], message: 'Job Sample Automation',
+            "cx": 320, "cy": 330},
+        {id: '84c98fe', "parent": "e137e9b", tags: [], message: 'List Test Fixes 1',
+            "cx": 140, "cy": 240},
+        {id: 'dd70cfe', "parent": "84c98fe", tags: [], message: 'List Test Fixes 2',
+            "cx": 230, "cy": 240},
+        {id: 'cb08bae', "parent": "dd70cfe", tags: [], message: 'List Test Fixes 3',
+            "cx": 320, "cy": 240},
+        {id: '422376e', "parent": "cb08bae", "parent2": "1c016b6", tags: [], message: 'Merge develop into 20.3_fb_listTestConversion',
+            "cx": 410, "cy": 240},
+        {id: '63ca08a', "parent": "422376e", tags: ['20.3_fb_listTestConversion', 'HEAD'], message: 'List test code review feedback',
+            "cx": 500, "cy": 240}
+    ]
+  }
+
   var free = {
     title: 'Free Explore',
     key: 'free',
@@ -357,6 +379,6 @@ define([], function () {
   }
 
   return [
-    free, freeWithRemote, upstreamChanges, rewrittenHistory, revert, cherryPick
+    mergeFromWrongUpstream, free, freeWithRemote, upstreamChanges, rewrittenHistory, revert, cherryPick
   ]
 })
